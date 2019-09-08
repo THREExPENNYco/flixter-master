@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flixter</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="flex-content-container"> 
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="#">Flixter</a>
+        <div class="nav-link ml-auto"> 
+          <% if user_signed_in? %> 
+            <%= link_to 'Sign Out', destroy_user_serssion_path, class:'nav-link' %> 
+          <% else %> 
+          <%= link_to 'Sign Up', new_user_session_path, class: 'nav-link' %>
+          <%= link_to 'Sign In', new_user_session_path, class: 'nav-link'
+          %>     
+        <% end %> 
+        </div> 
+    </nav>
+
+    <% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    
+    <%= yield %>
+  </div> 
+
+  <div id="footer"> 
+    <div class="container"> 
+      <b> Footer Here </b> 
+      <br /> 
+      <%= link_to 'Link', '#' %> 
+    </div> 
+  </div> 
+  </body>
+</html>
