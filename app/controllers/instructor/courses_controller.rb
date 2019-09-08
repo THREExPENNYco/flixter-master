@@ -1,23 +1,27 @@
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user! 
-  def new 
-    @course = Course.new(course_params)
-  end 
 
-  def create 
-    @course = current_user.courses.create(course_parmas)
-    redirect_to instructor_course_path(@course)
-  end 
+  def new
+    @course = Course.new
+  end
 
+  def create
+    @course = current_user.courses.create(course_params)
+    if @course.valid?
+      redirect_to instructor_course_path(@course)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
 
-  def show 
-    @course = Course.find(parmas[:id])
-  end 
+  def show
+    @course = Course.find(params[:id])
+  end
 
-  private 
+  private
 
-  def course_params 
-    params.required(:course).permit(:title, :descriiption, :cost)
-  end 
+  def course_params
+    params.require(:course).permit(:title, :description, :cost)
+  end
 
 end
