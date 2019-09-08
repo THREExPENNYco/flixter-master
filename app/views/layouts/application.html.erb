@@ -15,7 +15,7 @@
       <a class="navbar-brand" href="#">Flixter</a>
         <div class="nav-link ml-auto"> 
           <% if user_signed_in? %> 
-            <%= link_to 'Sign Out', destroy_user_serssion_path, class:'nav-link' %> 
+            <%= link_to 'Sign Out', destroy_user_session_path, class:'nav-link' %> 
           <% else %> 
           <%= link_to 'Sign Up', new_user_session_path, class: 'nav-link' %>
           <%= link_to 'Sign In', new_user_session_path, class: 'nav-link'
@@ -36,8 +36,9 @@
 
   <div id="footer"> 
     <div class="container"> 
-      <b> Footer Here </b> 
+     <b>Teachers</b> 
       <br /> 
+      <%= link_to "Teach a Course", new_instructor_course_path %>
       <%= link_to 'Link', '#' %> 
     </div> 
   </div> 
