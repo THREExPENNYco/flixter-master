@@ -1,9 +1,9 @@
 @import "bootstrap"; 
 
 body { 
-font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-background: image_url('graphy.png')
- }
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  background: image_url('graphy.png')
+}
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   letter-spacing: .025em; 
   background-color: #b55118;
   box-shadow: 0px 1px 3px #2a2a2a;
-/*  background: image_url('graphy.png');*/
+  /*  background: image_url('graphy.png');*/
 
 } 
 
@@ -27,13 +27,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .frosty h1 { 
   font-weight: 100; 
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
- }
+}
 
- .frosty h2 { 
+.frosty h2 { 
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 
-  }
+}
 
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
@@ -49,11 +49,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
   background-size: cover;
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
- }
+}
 
- .btn { 
+.btn { 
   border-radius: 0; 
-  }
+}
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -78,9 +78,31 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .clr { 
   clear: both;
- }
+}
 
- .course-pictures { 
-   max-height: 200px;
-   max-width: 200px;
-  }
+.course-pictures { 
+ max-height: 200px;
+ max-width: 200px;
+}
+
+.lesson { 
+  background-color: black;
+}
+
+.lesson a { 
+  color: white;
+  font-family: orbitron; 
+  font-weight: 100; 
+  font-size: 15px;
+}
+
+.section { 
+  border: 1px solid; 
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
+
+.lesson a b { 
+  font-weight: 100;
+  font-size: 25px;
+ }
