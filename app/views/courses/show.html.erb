@@ -11,20 +11,20 @@
       <span class="badge badge-default"> 
         <%= number_to_currency @course.cost %> 
       </span> 
-      <% if current_user && current_user == @course.user %> 
+    <% if current_user && current_user == @course.user %> 
       <br /> 
       <br /> 
       <%= link_to 'Administrator', instructor_course_path(@course), class: 'btn btn-danger btn-large' %> 
-      <% end %> 
+    <% end %> 
       <br /> 
       <br /> 
       <% if current_user %> 
         <% if current_user.enrolled_in?(@course) %> 
-        <h3 class="badge badge-info">You Are Enrolled!</h3> 
+          <h3 class="badge badge-info">You Are Enrolled!</h3> 
         <% else %> 
-            <% if @course.free? %> 
+          <% if @course.free? %> 
             <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn=primary', method: :post %> 
-            <% else %> 
+          <% else %> 
             <%= form_tag course_enrollments_path(@course) do %>
 
             <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -33,7 +33,7 @@
             data-email="<%= current_user.email %>"
             data-amount="<%= (@course.cost * 100).to_i %>"
             data-locale="auto"></script>
-            <% end %> 
+          <% end %> 
         <% end %>
       <% end %> 
     <% else %> 
@@ -51,7 +51,7 @@
         <% end %> 
       </h3> 
       <div class="row"> 
-        <% section.lessons.each do |lesson| %>
+        <% section.lessons.rank(:row_order).each do |lesson| %>
         <div class="col-12">  
           <div class="lesson text-center"> 
             <br />  
