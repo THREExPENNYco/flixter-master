@@ -7,12 +7,12 @@ class Course < ApplicationRecord
   validates :description, presence: true 
   validates :cost, presence: true, numericality: {greater_than_or_equal_to: 0}
 
-  def zero? 
+  def free? 
     cost.zero? 
   end 
 
   def premium? 
-    ! free 
+    ! free?
   end 
 
 end
