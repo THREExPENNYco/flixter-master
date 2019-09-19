@@ -17,6 +17,7 @@ class Instructor::CoursesController < ApplicationController
 
   def show
     @section = Section.new
+    @lesson = Lesson.new 
   end
 
   private
@@ -36,4 +37,7 @@ class Instructor::CoursesController < ApplicationController
     params.require(:course).permit(:title, :description, :cost, :image)
   end
 
+  def lesson_params
+    params.require(:lesson).permit(:title, :subtitle, :video, :row_order_position)
+  end
 end
