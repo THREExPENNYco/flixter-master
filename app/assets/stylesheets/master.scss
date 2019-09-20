@@ -12,12 +12,12 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar { 
   font-family: orbitron;
-  font-size: 20px; 
+  font-size: 15px; 
   letter-spacing: .025em; 
   background-color: #b55118;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  /*  background: image_url('graphy.png');*/
-
+  box-shadow: 0px 1px 3px #2a2a2a; 
+  margin-bottom: 0;
+  padding: none;
 } 
 
 .frosty {
@@ -36,6 +36,15 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 }
 
+.nav-link { 
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover { 
+  text-decoration: none; 
+}
+
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
@@ -48,7 +57,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 370px;
+  height: 500px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -142,6 +151,10 @@ ul .header .fa {
   margin: 0;
 }
 
- #footer { 
-  margin-top: 10px;
-  }
+.social-button {
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
