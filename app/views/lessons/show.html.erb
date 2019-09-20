@@ -1,8 +1,8 @@
 <br /> 
 
-<div class="booyah-box col-10 offset-1"> 
-<h1><%= current_lesson.title %> 
-  <p class="float-left"> 
+<div class="booyah-box col-10 offset-1 text-center"> 
+<h1><%= current_lesson.title %></h1>  
+  <p class="text-center"> 
     <%= current_lesson.subtitle %> 
   </p> 
 
@@ -20,8 +20,7 @@
     <source src='<%= current_lesson.video.to_s %>' type='video/mp4'>
     <noscript>
       <p class='vjs-no-js'>
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+        <a href='http://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
       </p>
     </noscript> 
   </video>
