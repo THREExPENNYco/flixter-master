@@ -96,7 +96,7 @@
         </button> 
         <h4 class="modal-title" id="myModalLabel">Add A New Section</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
         <%= f.input :title %>
       </div>
@@ -120,7 +120,7 @@
         <h4 class="modal-title" id="newLessonModalLabel">Modal title</h4>
       </div>
       <%= simple_form_for @lesson, url: "#", html: {id: 'newLessonForm'} do |f| %>
-      <div class="modal-body">
+      <div class="modal-body text-center">
           <%= f.input :title %>
           <%= f.input :subtitle %>
           <%= f.input :video %>
