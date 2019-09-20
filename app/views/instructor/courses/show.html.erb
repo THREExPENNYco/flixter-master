@@ -51,7 +51,7 @@
     <li data-update-url-section=<%= instructor_section_path(section) %>> 
       <div class="header"> 
         <span class="fa fa-ellipsis-v"></span> 
-        <%= section.title %> 
+        <%= link_to section.title %> 
       </div> 
       <button type="button" class="btn btn-primary btn-lg new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
           Add A New Lesson...
@@ -68,7 +68,7 @@
             </div> 
             <div class="col-11 text-center"> 
               <p>  
-                <b><%= lesson.title %></b> 
+                <b><%= link_to lesson.title, lesson_path(lesson) %></b> 
               </p>
               <p> 
                 <%= lesson.subtitle %> 
@@ -85,11 +85,6 @@
   </ul> 
 
 </div> 
-
-
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
-  New Section
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
