@@ -2,6 +2,8 @@
 @import "bootstrap";
 
 body { 
+  display: flex ; 
+  justify-content: center; 
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   background: image_url('graphy.png')
 }
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 } 
 
 .frosty {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .75);
   color: white;
 }
 
