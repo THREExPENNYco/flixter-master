@@ -1,6 +1,6 @@
 Flixter is a tutorial marketplace built with Ruby on Rails. Users are able to view and upload tutorials. Additionally, users are able to charge for their tutorials if they choose to do so.
 
-[Link to Fliter](https://flixter-devoun-edwards.herokuapp.com/)
+[Link to Flixter](https://flixter-devoun-edwards.herokuapp.com/)
 
 *****************************************************************************************************************************************
 
