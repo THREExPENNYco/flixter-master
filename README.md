@@ -4,7 +4,7 @@ Flixter is a tutorial marketplace built with Ruby on Rails. Users are able to vi
 
 *****************************************************************************************************************************************
 
-# Dependencies: #
+# Dependencies: 
   * Carrierwave/MiniMagik -- uploading and automatic resizing
   * Amazon Web Services S3 Buckets -- storage for tutorials 
   * Stripe API -- payment system 
@@ -19,3 +19,6 @@ Flixter is a tutorial marketplace built with Ruby on Rails. Users are able to vi
   
   `bundle install`
  
+ # Flixter Screenshot: 
+ 
+![Flixter Screenshot](https://github.com/THREExPENNYco/flixter-master/blob/master/flixterScreenShot.PNG)
