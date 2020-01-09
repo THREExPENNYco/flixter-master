@@ -12,6 +12,7 @@ Flixter is a tutorial marketplace built with Ruby on Rails. Users are able to vi
   * Bootstrap -- used to speed up the development of front end UI 
   * Devise -- user authentication 
   * Simple Form -- submission forms
+  * Ranked Model -- order consistency between front end and database
   
   # Installation: 
   
