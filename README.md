@@ -4,11 +4,13 @@ Flixter is a tutorial marketplace built with Ruby on Rails. Users are able to vi
 
 *****************************************************************************************************************************************
 
-Flixter uses a suite of technologies: 
-  * Carrierwave/MiniMagik -- image uploading and automatic resizing
+#H1 Flixter uses a suite of technologies: #H1
+  * Carrierwave/MiniMagik -- uploading and automatic resizing
   * Amazon Web Services S3 Buckets -- storage for tutorials 
   * Stripe API -- payment system 
   * jQuery -- dynamic front end reordering 
   * Bootstrap -- used to speed up the development of front end UI 
   * Devise -- user authentication 
   * Simple Form -- submission forms
+  
+ 
